@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<htmldir="rtl" lang="ar"  xml:lang="ar">
+
+<body>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+  
+select{
+	font-style: italic;
+	margin-left: 40px;
+	box-shadow: 1px 1px 1px 1px;
+	text-shadow: 3px;
+	font-weight: bold;
+	width: 200px;
+	border-radius: 20px;
+	height: auto ;
+	font-family: verdana , sans-serif ;
+}
+  body
+    {
+        font-family: arial;
+    }
+	
+
+    table,th,td
+    {    
+    	width: auto;
+    	height: auto;
+    	margin: 20px 60px;
+     text-align: center;
+        border-collapse: collapse;
+        outline: 1px solid #e3e3e3; 
+     white-space:nowrap ;
+    } 
+    .Math{
+    	background-color: #11CAB1 ;
+
+    } 
+    .svt{
+    	background-color: #EC643A ;
+    } 
+    .Physique{
+    	background-color:#E97A7E ;
+    } 
+    .chimie{
+    background-color: #E3CD75 ;
+    } 
+    .Anglais{
+      background-color: #EA0010
+
+    }
+
+    td
+    {
+        padding: 15px 15px; 
+font-size:1.1em;
+    }
+a{
+font-weight:bold;
+}
+    th
+    {
+        background: #6cA;
+        color: white;
+        padding: 15px 25px;
+    }
+
+    td:hover
+    {
+        cursor: pointer;
+        background: #666;
+        color: white;
+    }
+  
+
+@media (max-width: 800px) {
+
+table,th,td
+    {   
+
+    	width: auto;
+    	height: auto;
+    	margin: 1px ;}
+.responsive-table-line td:before { content: attr(data-title);  text-align:right; }
+
+th[data-title="Mai"]:before{content: attr(data-title);}
+
+.responsive-table-line table, 
+
+.responsive-table-line thead, 
+
+.responsive-table-line tbody, 
+
+.responsive-table-line th, 
+
+.responsive-table-line td, 
+
+.responsive-table-line tr { 
+
+display: block; 
+
+}
+
+ 
+
+.responsive-table-line thead tr { 
+
+display:none;
+
+}
+
+
+
+.responsive-table-line td { 
+
+position: relative;
+
+border: 1px solid transparent;
+
+padding-left: 50% !important; 
+
+white-space: normal;
+
+text-align:left; 
+
+}
+
+ 
+
+.responsive-table-line td:before { 
+
+position: absolute;
+
+top: 0px;
+
+left: 0px;
+
+width: 45%; 
+
+padding-right: 15px; 
+
+height:100%;
+
+white-space: nowrap;
+
+text-overflow: ellipsis !important;
+
+overflow:hidden !important;
+
+text-align:left;
+
+background-color:#f8f8f8;
+
+padding:0.7px;
+
+}
+
+select{
+margin-bottom:  :20px;
+}
+
+}
+
+
+</style>
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+     $(document).ready(function()
+    {
+        $('#iu_table').hide();
+        $('#selector').change(function()
+            {
+                $('#si_table').toggle();
+                $('#iu_table').toggle();
+            });
+    });
+
+</script>
+</head>
+<body>
+ <select id="selector"> 
+        <option id="si" selected="selected">Mai</option> 
+        <option id="iu">Juin</option> 
+ </select><br><p>    <br> </p>
+
+<div id="si_table" class="responsive-table-line" style="margin:0px ; Overflow:auto; auto;max-width:1200px;">
+
+<table id="table1" class="table table-bordered table-condensed table-body-center" >
+
+<thead>
+
+<tr>
+
+<th>mai</th>
+
+<th >Lundi <br> 25/05/2017</th>
+<th>Mardi <br>26/05/2017</th> 
+<th>Mercredi<br>27/05/2017</th> 
+<th>Jeudi<br>28/05/2017</th>
+<th>Lundi<br>29/05/2017</th>
+<th>Mardi<br>30/05/2017</th>
+<th>Mercredi<br>31/05/2017</th> 
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr height > </th>
+
+<th data-title="Mai" ><font size="4"><p>11:30</p></font></th>
+
+<td  data-tile="Lundi Le 23/05/2017" class="svt"> SVT <br> Théme :<br> L'evolution</td>
+<td data-tile="Mardi Le 26/05/2017" class="Math">Math <br> Théme :<br> Statistiques </td> 
+<td data-title="Mercredi le 27/05/2017" class="chimie">Chimie <br> théme :<br> Les piles</td> 
+<td data-title="Jeudi le 28/05/2017" class="Physique">Physique <br>théme : <br>RLC</td>
+<td  data-title="Lundi le 29/05/2017" class="svt">Svt <br>Théme :<br> L'evolution</td>
+<td  data-title="le 30/50/2017" class="Math">Mathématiques <br>Derivabilité</td>
+<td data-title="le 31/05/2017" class="chimie">Chimie <br>Théme :<br>L'eau</td> 
+
+</tr>
+
+<tr height > </th>
+
+<th data-title="Temps" ><font size="4"><p>11:30</p></font></th>
+<td class="chimie">Chimie <br>Théme :<br>L'eau</td> 
+<td class="Physique">Physique <br>Circuit<br> RC</td>
+<td class="Math">Mathématiques <br>Algébre</td>
+<td class="Anglais">Anglais <br> Pesent <br>Module5</td>
+<td class="Math">SVT Math</td>
+<td class="svt">Svt <br>Théme : L'evolution</td>
+<td class="Math">Mathématiques <br>Derivabilité</td>
+
+
+
+</tr>
+
+
+ </tbody>
+
+</table> 
+</div> 
+<div id="iu_table" class="responsive-table-line" style="margin:0px ;Overflow:auto; auto;max-width:1200px;">
+
+<table  id="table2"class="table table-bordered table-condensed table-body-center" >
+
+<thead>
+
+<tr>
+
+<th>juin</th>
+
+<th>Jeudi<br>01/06/2017</th>
+<th>Vendredi<br>02//06/2017</th>
+<th>Samedi<br>02/06/2017</th>
+<th>Lundi<br>05/06/2017</th>
+<th>Mardi<br>06/06/2017
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr height > </th>
+
+<th data-title="Temps" ><font size="4"><p>11:30</p></font></th>
+
+<td class="Physique">Physique <br>Circuit<br> RC</td>
+<td class="Physique">Physique <br>Circuit<br> RC</td>
+<td class="Math">Mathématiques <br>Algébre</td>
+<td class="Anglais">Anglais <br> Pesent <br>Module5</td>
+<td class="Math">SVT Math</td>
+
+</tr>
+
+<tr height > </th>
+
+<th data-title="Temps" ><font size="4"><p>11:30</p></font></th>
+<td class="svt"> SVT <br> Théme :<br> L'evolution</td>
+<td class="Math">Math <br> Théme :<br> Statistiques </td> 
+<td class="chimie">Chimie <br> théme :<br> Les piles</td> 
+<td class="Physique">Physique <br>théme :<br> RLC</td>
+<td class="Math">SVT Math</td>
+
+
+
+</tr>
+
+
+ </tbody>
+
+</table>
+</div>
+</div>
+</body>
+</html>
